@@ -10,9 +10,9 @@ const goldenRatio = 0.618033988749895;
 function default_1(saturation, value) {
     hue += goldenRatio;
     hue %= 1;
-    if (typeof saturation !== "number")
+    if (typeof saturation !== 'number')
         saturation = 0.5;
-    if (typeof value !== "number")
+    if (typeof value !== 'number')
         value = 0.95;
     return color_1.default({
         h: hue * 360,
@@ -21,4 +21,3 @@ function default_1(saturation, value) {
     });
 }
 exports.default = default_1;
-;
