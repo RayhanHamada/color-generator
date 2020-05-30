@@ -7,11 +7,16 @@
     "color": "^0.6.0"
   },
   "devDependencies": {
+    "@types/chai": "^4.2.11",
+    "@types/color": "^3.0.1",
+    "@types/mocha": "^7.0.2",
     "chai": "^1.9.1",
-    "mocha": "^1.18.2"
+    "mocha": "^1.18.2",
+    "typescript": "^3.9.3"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "build": "./node_modules/.bin/tsc --build ./tsconfig.json"
   },
   "repository": {
     "type": "git",
